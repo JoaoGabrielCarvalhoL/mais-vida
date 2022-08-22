@@ -51,7 +51,7 @@ public class UserControllerTest {
     }
 
     @Test
-    public void delete_book_test() throws Exception {
+    public void should_delete_user() throws Exception {
 
         BDDMockito.given(userService.findById(Mockito.anyLong()))
                 .willReturn(new User(1L, "mais vida", "project", "maisvida@gmail.com"));
